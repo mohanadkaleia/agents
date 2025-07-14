@@ -5,7 +5,7 @@ from logging.handlers import RotatingFileHandler
 
 FORMATTER = logging.Formatter("%(asctime)s: [%(levelname)s] [%(name)s] %(message)s")
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
-LOG_FILE = os.path.join(BASE_DIR, "..", "flowring.log")
+LOG_FILE = os.path.join(BASE_DIR, "..", "agents.log")
 
 
 def get_console_handler():

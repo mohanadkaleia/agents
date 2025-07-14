@@ -1,0 +1,11 @@
+# Production configuration for Flowring
+
+# Stock Market Client Configuration
+stock_client:
+  api_key: ""  # Set your Alpha Vantage API key here
+  base_url: "https://www.alphavantage.co/query"
+  timeout: 30
+  max_retries: 3
+  rate_limit:
+    calls_per_minute: 5
+    calls_per_day: 500
