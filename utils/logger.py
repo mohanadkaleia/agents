@@ -33,7 +33,9 @@ def get_logger(logger_name, level=logging.DEBUG):
     logger.setLevel(level)
 
     logger.addHandler(get_console_handler())
-    logger.addHandler(get_file_handler())
+    file_handler = get_file_handler()
+    if file_handler:
+        logger.addHandler(file_handler)
 
     # with this pattern, it's rarely necessary to propagate the error up to parent
     logger.propagate = False
